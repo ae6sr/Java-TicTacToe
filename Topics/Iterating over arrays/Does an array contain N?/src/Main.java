@@ -5,6 +5,8 @@ class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        boolean numFound = false;
+
         int arraySize = scanner.nextInt();
         scanner.nextLine();
 
@@ -18,12 +20,12 @@ class Main {
 
         for (int i = 0; i < arraySize; i++) {
             if (arrayInts[i] == searchInt) {
-                System.out.println("true");
+                numFound = true;
                 break;
             }
 
         }
-        System.out.println("false");
+        System.out.println(numFound);
         scanner.close();
     }
 }
